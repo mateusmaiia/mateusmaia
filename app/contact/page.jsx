@@ -100,9 +100,9 @@ const Contact = () => {
                 <Input type="email" placeholder="emailAddress"  {...register("email")}/>
                 <Input type="phone" placeholder="phoneNumber" {...register("phoneNumber")}/>
               </div>
-              {/*
-              select
-               <Select>
+              
+              {/* select */}
+               {/* <Select>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
