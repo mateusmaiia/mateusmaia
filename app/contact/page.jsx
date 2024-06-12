@@ -53,8 +53,15 @@ const info = [
 
 const Contact = () => {
 
-  const {handleSubmit, register, reset, formState: {isSubmitSuccessful}} = useForm({
+  const {handleSubmit, register, reset, formState: {isSubmitSuccessful, errors}} = useForm({
     resolver: zodResolver(ContactSchema),
+    defaultValues:{
+      firstName: "dasdsa",
+      lastName: "dasdsa",
+      email: "mateusm@gmail.com",
+      phoneNumber: "",
+      textarea: "afedimnafw",
+    }
   })
 
   function handleSendEmail(data){
@@ -70,8 +77,8 @@ const Contact = () => {
       }
       toast.success('Email enviado com sucesso');
       return console.log(data)
-   } catch (error) {
-    
+      } catch (error) {
+        toast.error(error)
    }
 
   }
@@ -99,6 +106,8 @@ const Contact = () => {
                 <Input type="lastname" placeholder="lastName" {...register("lastName")}/>
                 <Input type="email" placeholder="emailAddress"  {...register("email")}/>
                 <Input type="phone" placeholder="phoneNumber" {...register("phoneNumber")}/>
+                {toast?.error(errors?.phoneNumber?.message)}
+
               </div>
               
               {/* select */}
