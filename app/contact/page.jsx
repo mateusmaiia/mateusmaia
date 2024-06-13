@@ -19,8 +19,8 @@ import { z } from "zod";
 
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Irish_Grover } from "next/font/google";
 import { toast } from "sonner";
+import { useEffect } from "react";
 
 
 const ContactSchema = z.object({
@@ -53,7 +53,7 @@ const info = [
 
 const Contact = () => {
 
-  const {handleSubmit, register, reset, formState: {isSubmitSuccessful, errors}} = useForm({
+  const {handleSubmit, register, reset, formState} = useForm({
     resolver: zodResolver(ContactSchema),
     defaultValues:{
       firstName: "dasdsa",
@@ -64,9 +64,29 @@ const Contact = () => {
     }
   })
 
+  const {isSubmitSuccessful, errors} = formState
+
+  useEffect(() => {
+    if (errors.phoneNumber) {
+      toast.error(errors.phoneNumber.message);
+    }
+    if (errors.email) {
+      toast.error(errors.email.message);
+    }
+    if (errors.firstName) {
+      toast.error(errors.firstName.message);
+    }
+    if (errors.lastName) {
+      toast.error(errors.lastName.message);
+    }
+    if (errors.textarea) {
+      toast.error(errors.textarea.message);
+    }
+  }, [errors])
   function handleSendEmail(data){
    try {
       if(isSubmitSuccessful) {
+        toast.success('Email enviado com sucesso');
         reset({
           firstName: "",
           lastName: "",
@@ -75,10 +95,9 @@ const Contact = () => {
           textarea: "",
         });
       }
-      toast.success('Email enviado com sucesso');
       return console.log(data)
       } catch (error) {
-        toast.error(error)
+        console.log(error)
    }
 
   }
@@ -106,7 +125,6 @@ const Contact = () => {
                 <Input type="lastname" placeholder="lastName" {...register("lastName")}/>
                 <Input type="email" placeholder="emailAddress"  {...register("email")}/>
                 <Input type="phone" placeholder="phoneNumber" {...register("phoneNumber")}/>
-                {toast?.error(errors?.phoneNumber?.message)}
 
               </div>
               
