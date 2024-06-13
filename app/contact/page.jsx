@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from '@emailjs/browser'
 // import {
 //   Select,
 //   SelectContent,
@@ -47,7 +48,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Code Corner, Tech Town 13579",
+    description: "João Pessoa, Paraiba, Brasil",
   },
 ];
 
@@ -56,11 +57,11 @@ const Contact = () => {
   const {handleSubmit, register, reset, formState} = useForm({
     resolver: zodResolver(ContactSchema),
     defaultValues:{
-      firstName: "dasdsa",
-      lastName: "dasdsa",
-      email: "mateusm@gmail.com",
+      firstName: "",
+      lastName: "",
+      email: "",
       phoneNumber: "",
-      textarea: "afedimnafw",
+      textarea: "",
     }
   })
 
@@ -83,9 +84,13 @@ const Contact = () => {
       toast.error(errors.textarea.message);
     }
   }, [errors])
+
   function handleSendEmail(data){
    try {
       if(isSubmitSuccessful) {
+
+        emailjs.send('service_portfolio', "template_mubvn9e", data, "jC_iAK5wdMrBaG9o3")
+
         toast.success('Email enviado com sucesso');
         reset({
           firstName: "",
@@ -121,10 +126,10 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="firstName" {...register("firstName")} />
-                <Input type="lastname" placeholder="lastName" {...register("lastName")}/>
-                <Input type="email" placeholder="emailAddress"  {...register("email")}/>
-                <Input type="phone" placeholder="phoneNumber" {...register("phoneNumber")}/>
+                <Input type="firstname" placeholder="first name" {...register("firstName")} />
+                <Input type="lastname" placeholder="last mame" {...register("lastName")}/>
+                <Input type="email" placeholder="email address"  {...register("email")}/>
+                <Input type="phone" placeholder="phone number" {...register("phoneNumber")}/>
 
               </div>
               
