@@ -6,6 +6,7 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+
 const Home = () => {
   return (
     <section className="h-full">
@@ -29,9 +30,9 @@ const Home = () => {
                 className="uppercase flex items-center gap-2"
                 asChild
               >
-                <a href="">
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+                <a href="CVMateusMaia.pdf" target="_blank">
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
                 </a>
               </Button>
               <div className="mb-8 xl:mb-0">
