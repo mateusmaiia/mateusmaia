@@ -36,7 +36,7 @@ const MobileNav = () => {
   const pathname = usePathname();
   return (
     <Tabs className="w-full bg-primary mt-10 ">
-      <TabsList  className="w-full  m-0 p-4 border-t bg-primary rounded-none bg-transparent rounded-0  border-gray-700 ">
+      <TabsList  className="w-full  m-0 p-2 border-t bg-primary rounded-none bg-transparent rounded-0  border-gray-700 ">
         {links.map((link, index) => {
           return(
             <TabsTrigger  key={index} className="bg-primary  flex-grow w-full rounded-none">
@@ -45,7 +45,7 @@ const MobileNav = () => {
               className={`${
                 link.path === pathname &&
                 "text-accent-hover border-b-2 border-accent-hover "
-                } text-xl text-white capitalize transition-all `}
+                } text-base mb-px text-white capitalize transition-all `}
                 >
               {link.name}
             </Link>
