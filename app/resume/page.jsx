@@ -23,23 +23,23 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
+      fieldValue: "(83) 99953-3314",
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Years",
+      fieldValue: "2+ Years",
     },
     {
       fieldName: "Skype",
-      fieldValue: "luke.01",
+      fieldValue: "matteusmaia_",
     },
     {
       fieldName: "Nationality",
-      fieldValue: "American",
+      fieldValue: "Brazilian",
     },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
+      fieldValue: "mateusssmaia@gmail.com",
     },
     {
       fieldName: "Freelance",
@@ -47,7 +47,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldValue: "English, Portuguese",
     },
   ],
 };
@@ -195,16 +195,16 @@ const Resume = () => {
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto z-[400] pb-20">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:text-accent" value="experience">Experience</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:text-accent" value="education">Education</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:text-accent" value="skills">Skills</TabsTrigger>
+            <TabsTrigger className="data-[state=active]:text-accent" value="about">About me</TabsTrigger>
           </TabsList>
 
           {/* content */}
