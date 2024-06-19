@@ -113,16 +113,16 @@ const Contact = () => {
         opacity: 1,
         transition: { delay: 1, duration: 0.4, ease: "easeIn" },
       }}
-      className="py-6"
+      className="py-6 "
     >
-      <div className="container mx-auto">
+      <div className=" container mx-auto pb-20 lg:pb-0">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit(handleSendEmail)}>
-              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
+              <h3 className="text-4xl text-accent">Vamos trabalhar juntos!</h3>
               <p className="text-white/60">
-              Focused on delivering top-notch Web Development services, we transform your ideas into functional and beautiful websites. Contact us today to see how we can help you succeed online.
+                Focado em fornecer serviços de Desenvolvimento Web de alto nível, transformamos suas ideias em sites funcionais e bonitos. Contate-nos hoje para ver como podemos ajudá-lo a ter sucesso online.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
