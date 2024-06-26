@@ -20,9 +20,9 @@ const Home = () => {
               <span className="text-accent">Mateus Maia</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              {/* I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies. */}
-              Sou especialista em criar experiências digitais elegantes e impactantes, com sólida expertise em múltiplas linguagens de programação e tecnologias de ponta.
+              I excel at crafting elegant digital experiences and I am
+              proficient in various programming languages and technologies. 
+              {/* Sou especialista em criar experiências digitais elegantes e impactantes, com sólida expertise em múltiplas linguagens de programação e tecnologias de ponta. */}
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

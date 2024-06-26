@@ -5,7 +5,7 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  FaDocker,
   FaNodeJs,
 } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Experienced in full-stack and front-end development, contributing to various projects and delivering high-quality solutions.",
   info: [
     {
       fieldName: "Name",
@@ -23,7 +23,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(83) 99953-3314",
+      fieldValue: "+55 (83) 99953-3314",
     },
     {
       fieldName: "Experience",
@@ -47,7 +47,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Portuguese",
+      fieldValue: "Portuguese, English",
     },
   ],
 };
@@ -60,35 +60,25 @@ const experience = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Zênite Tech",
+      position: "Full-Stack Developer",
+      duration: "2023 - Present",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "BetMaker",
+      position: "Freelancer Front-End Developer",
+      duration: "Summer 2024",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      company: "NPJ-Connect",
+      position: "Full-Stack Developer",
+      duration: "2023 - 2024",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
+      company: "UNINASSAU Uniscore",
+      position: "Front-End Developer",
+      duration: "2023 - 2024",
+    }
   ],
 };
 
@@ -97,37 +87,42 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "A collection of my educational achievements and certifications.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "UNINASSAU",
+      degree: "Analysis and Systems Development",
+      duration: "2023 - present",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "Rocketseat",
+      degree: "React/Typescript",
+      duration: "65 hours",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      institution: "Rocketseat",
+      degree: "React Native",
+      duration: "55 hours",
     },
     {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
+      institution: "Curso em Video",
+      degree: "3 python certificates",
+      duration: "120 hours",
     },
     {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
+      institution: "Rocketseat",
+      degree: "Next.js",
+      duration: "5 hours",
     },
     {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "Jonas Schmedtmann",
+      degree: "Responsive HTML/CSS",
+      duration: "55 hours",
+    },
+    {
+      institution: "Rocketseat",
+      degree: "Tailwind",
+      duration: "5 hours",
     },
   ],
 };
@@ -167,8 +162,8 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <FaDocker />,
+      name: "Docker",
     },
   ],
 };
