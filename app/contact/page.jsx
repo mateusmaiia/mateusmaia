@@ -126,10 +126,10 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="first name" {...register("firstName")} />
-                <Input type="lastname" placeholder="last mame" {...register("lastName")}/>
-                <Input type="email" placeholder="email address"  {...register("email")}/>
-                <Input type="phone" placeholder="phone number" {...register("phoneNumber")}/>
+                <Input type="firstname" placeholder="First name" {...register("firstName")} />
+                <Input type="lastname" placeholder="Last mame" {...register("lastName")}/>
+                <Input type="email" placeholder="Email address"  {...register("email")}/>
+                <Input type="phone" placeholder="Phone number" {...register("phoneNumber")}/>
 
               </div>
               
