@@ -33,15 +33,15 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
+    category: "Evently",
+    title: "Evently",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
+      "A web application for event organization, similar to Eventbrite or Meetup, using a modern and robust tech stack. The platform includes secure authentication with Clerk, comprehensive event management with creation, editing, and deletion capabilities, and an advanced search and filtering system to find events by categories and keywords. Events are classified into various categories to facilitate navigation. The checkout and payment process is secure and efficient, thanks to the integration with Stripe. Uploadthing is used to manage image and document uploads, while React-Datepicker makes selecting event dates easy. On the frontend, it utilizes Next.js 14, Tailwind CSS, Shadcn, React Hook Form, and Zod. On the backend, Mongoose is used for the database. The result is a complete and intuitive platform for creating and managing events, providing a smooth and secure user experience.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }, { name: "MongoDB" }],
+    image: "/assets/work/evently.png",
+    live: "https://evently-maia.vercel.app/",
+    github: "https://github.com/mateusmaiia/evently",
+  },
   {
     num: "03",
     category: "frontend",
